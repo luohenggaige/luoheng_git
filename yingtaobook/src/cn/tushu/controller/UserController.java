@@ -32,12 +32,12 @@ public class UserController {
 	
 	@RequestMapping("/toRegister.do")
 	public String toRegister(){
-		return "adminjsp/reg";
+		return "index/reg";
 	}
 	
 	@RequestMapping("/toLogin.do")
 	public String toLogin(){
-		return "adminjsp/login";
+		return "index/login";
 	}
 	
 	@RequestMapping("/register.do")
@@ -48,7 +48,7 @@ public class UserController {
 			return "redirect:/user/toRegister.do";
 		}
 		userService.insert(user);
-		return "adminjsp/login";
+		return "index/login";
 	}
 	
 	@RequestMapping("/getImage.do")
@@ -91,10 +91,10 @@ public class UserController {
 		if(user == null){
 			tip = "userOrPassError";
 			model.addAttribute("tip", tip);
-			return "adminjsp/login";
+			return "index/login";
 		}
 		session.setAttribute("user", user);
-		return "index";
+		return "index/index";
 	}
 	
 	@RequestMapping("/findByUserName.do")

@@ -15,7 +15,7 @@ public class IndexController {
 	
 	@RequestMapping("/toIndex.do")
 	public String toIndex(){
-		return "index";
+		return "index/index";
 	}
 	
 	@RequestMapping("/toTop.do")
@@ -25,12 +25,22 @@ public class IndexController {
 	
 	@RequestMapping("/toRight.do")
 	public String toRright(){
-		return "right";
+		return "index/right";
 	}
 	
 	@RequestMapping("/toBody.do")
 	public String toBody(){
 		return "index/body";
+	}
+	
+	@RequestMapping("/toAdminIndex.do")
+	public String toAdminIndex(){
+		return "adminjsp/adminIndex";
+	}
+	
+	@RequestMapping("/toAdminTop.do")
+	public String toAdminTop(){
+		return "adminjsp/adminTop";
 	}
 	
 }

@@ -27,7 +27,6 @@
 		<a class="a" href="">首页</a>
 		<a class="a" href="">藏书交易</a>
 		<a class="a" href="">好书分享</a>
-		<a class="a" href="">个人中心</a>
 	</div>
 	
 </body>
